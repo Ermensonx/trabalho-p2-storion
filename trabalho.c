@@ -154,7 +154,7 @@ int main()
         }
     } else if (opcaoEscolhida == 6) {
         goToExit();
-    } else { // caso nenhumas das opcoes sejam selecionadas ele encerra o programa
+    } else { // caso nenhumas das opcoes sejam selecionadas ele volta para a funcao main()
         printf("A opção informada é inválida, tente novamente! \n");
            sleep(3); // Pausa por 1 segundo
 
