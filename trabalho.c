@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <windows.h> 
  //Criacao das estruturas 
 
 
@@ -154,15 +153,15 @@ int main()
         }
     } else if (opcaoEscolhida == 6) {
         goToExit();
-    } else { // caso nenhumas das opcoes sejam selecionadas ele volta para a funcao main()
+    } else { // ele encerra o programa
         printf("A opção informada é inválida, tente novamente! \n");
-           sleep(3); // Pausa por 1 segundo
-
-        main();
+        system("PAUSE"); // Pausa o programa para que o usuário veja a mensagem de erro5
 
     }
     
+    // Reinicia o programa (não é uma prática recomendada, mas é usada aqui)
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    system("PAUSE");
- 
+    main(); // ao encerrar o programa ele volta para o inicio da função 
+    
+    system("PAUSE"); // Pausa o programa antes de sair
 }
